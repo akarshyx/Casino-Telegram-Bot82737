@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Bot & File Workspace"
+description = "A focused workspace for organizing project files, reviewing code health, and diagnosing a Telegram bot connection from one place."
+version = "1.0.0"
+id = "artifacts/bot-file-workspace"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23700
+
+[services.development]
+run = "pnpm --filter @workspace/bot-file-workspace run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/bot-file-workspace", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/bot-file-workspace/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23700"
+BASE_PATH = "/"

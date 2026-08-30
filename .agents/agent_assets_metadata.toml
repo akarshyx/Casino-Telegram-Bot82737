@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "E75cWABdXJhgyuYrpjkeA"
+uri = "file://attached_assets/IMG_0561_crypto_bonus_clean.jpeg"
+type = "image"
+title = "Clean crypto bonus image"
+description = "The promotional text has been removed while preserving the rounded panel and patterned background."
+logical_id = "eab1bd94-6042-455b-846b-6d1ea91891b1"
+content_hash = "sha256:36b41cedf94cfe11ef64565e24ca2874aff52ec0fa49837e6fcb0e63f7e76e92"
+size = 49983
+mtime_ms = 1788119446400
+storage_uri = "gcs://replit-rams-assets-sisko/rams/assets/repl:e851bdc0-feff-4d3c-a7a3-0e77b8fec53f/eab1bd94-6042-455b-846b-6d1ea91891b1/5c510d77-94cc-4c69-814d-fcdb894ca8f1"
+storage_version_token = "1788119461026872"
+content_type = "image/jpeg"

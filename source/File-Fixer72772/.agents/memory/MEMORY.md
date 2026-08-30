@@ -1,0 +1,2 @@
+- [Telegram bot dependency](telegram-bot-dependency.md) — never install the unrelated PyPI `telegram` package alongside `python-telegram-bot`.
+- [Animated dice concurrency](animated-dice-concurrency.md) — serialize each game's roll stream; timing delays are not a safe substitute for state guards.
